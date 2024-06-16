@@ -104,6 +104,7 @@ function animate() {
   torus.rotation.y += 0.005
   torus.rotation.z += 0.01
   Me.rotation.x += 0.01
+  donut_ball.rotation.x += 0.01
   renderer.render(scene, camera)
  // controls.update()
 }

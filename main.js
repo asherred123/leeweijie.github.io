@@ -17,7 +17,7 @@ camera.position.setZ(30)
 renderer.render(scene, camera)
 
 //createing an object
-const donutTexture = new THREE.TextureLoader().load('/leeweijie.github.io/images/donut_texture.jpg')
+const donutTexture = new THREE.TextureLoader().load('https://github.com/asherred123/leeweijie.github.io/blob/main/images/donut_texture.jpg?raw=true')
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
 const material = new THREE.MeshStandardMaterial({map: donutTexture})
 const torus = new THREE.Mesh(geometry, material)
@@ -55,7 +55,7 @@ const spaceTexture = new THREE.TextureLoader().load('https://raw.githubuserconte
 scene.background = spaceTexture
 
 //createing a avatar
-const MeTexture = new THREE.TextureLoader().load('/leeweijie.github.io/images/me.jpg')
+const MeTexture = new THREE.TextureLoader().load('https://github.com/asherred123/leeweijie.github.io/blob/main/images/me.jpg?raw=true')
 const Me = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: MeTexture })
@@ -66,7 +66,7 @@ Me.position.x = 3
 
 
 //creating a donut ball 
-const ballTexture = new THREE.TextureLoader().load('/leeweijie.github.io/images/ball_texture.jpg')
+const ballTexture = new THREE.TextureLoader().load('https://github.com/asherred123/leeweijie.github.io/blob/main/images/ball_texture.jpg?raw=true')
 const donut_ball = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({ map: ballTexture })
@@ -105,7 +105,7 @@ function animate() {
   torus.rotation.z += 0.01
   Me.rotation.x += 0.01
   renderer.render(scene, camera)
-  controls.update()
+ // controls.update()
 }
 
 animate()

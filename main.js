@@ -51,7 +51,7 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 //createing a background
-const spaceTexture = new THREE.TextureLoader().load('/leeweijie.github.io/images/donuts.webp')
+const spaceTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/asherred123/leeweijie.github.io/main/images/donuts.webp')
 scene.background = spaceTexture
 
 //createing a avatar

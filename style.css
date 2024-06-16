@@ -62,12 +62,12 @@ canvas {
     padding: 0;
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
-    background-color: white;
+  
   }
 
   blockquote p {
     color: black;
-   
+    background-color: white;
     font-size: 4rem;
     display: inline;
     line-height: 1;

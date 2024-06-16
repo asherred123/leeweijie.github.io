@@ -17,7 +17,7 @@ camera.position.setZ(30)
 renderer.render(scene, camera)
 
 //createing an object
-const donutTexture = new THREE.TextureLoader().load('donut_texture.jpg')
+const donutTexture = new THREE.TextureLoader().load('.images/donut_texture.jpg')
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
 const material = new THREE.MeshStandardMaterial({map: donutTexture})
 const torus = new THREE.Mesh(geometry, material)
@@ -51,11 +51,11 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 //createing a background
-const spaceTexture = new THREE.TextureLoader().load('donuts.webp')
+const spaceTexture = new THREE.TextureLoader().load('.images/donuts.webp')
 scene.background = spaceTexture
 
 //createing a avatar
-const MeTexture = new THREE.TextureLoader().load('me.jpg')
+const MeTexture = new THREE.TextureLoader().load('.images/me.jpg')
 const Me = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: MeTexture })
@@ -66,7 +66,7 @@ Me.position.x = 3
 
 
 //creating a donut ball 
-const ballTexture = new THREE.TextureLoader().load('ball_texture.jpg')
+const ballTexture = new THREE.TextureLoader().load('.images/ball_texture.jpg')
 const donut_ball = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({ map: ballTexture })

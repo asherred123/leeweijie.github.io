@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 
 export default defineConfig({
-    base: '/leeweijie.github.io/'
+    base: '/'
  
   // Add more configurations here
 })

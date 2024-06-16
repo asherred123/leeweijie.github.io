@@ -55,7 +55,7 @@ const spaceTexture = new THREE.TextureLoader().load('https://raw.githubuserconte
 scene.background = spaceTexture
 
 //createing a avatar
-const MeTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/asherred123/leeweijie.github.io/main/images/donuts.webp/me.jpg')
+const MeTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/asherred123/leeweijie.github.io/main/images/me.jpg')
 const Me = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: MeTexture })
